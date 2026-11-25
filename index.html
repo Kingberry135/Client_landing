@@ -1,0 +1,1584 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090909">
+<title>CLIENT MAGNETS | Find Clients. Secure Projects. Get Paid.</title>
+<meta name="description" content="Learn how to find potential clients, approach businesses directly, secure digital projects and deliver valuable services using practical skills and AI. Join CLIENT MAGNETS.">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<style>
+:root {
+    --black: #090909;
+    --dark: #111111;
+    --dark2: #171717;
+    --gold: #d9ad55;
+    --gold2: #f2d18a;
+    --white: #ffffff;
+    --muted: #b8b8b8;
+    --green: #25d366;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+    margin: 0;
+    background: var(--black);
+    color: var(--white);
+    font-family: 'DM Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+p { color: var(--muted); line-height: 1.8; }
+
+a { text-decoration: none; }
+
+.gold { color: var(--gold); }
+
+.gold-text {
+    background: linear-gradient(110deg,#fff0c6,#d5a747,#fff0c6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.section-padding { padding: 95px 0; }
+
+.container { max-width: 1140px; }
+
+.navbar {
+    background: rgba(9,9,9,.94);
+    border-bottom: 1px solid rgba(217,173,85,.15);
+    backdrop-filter: blur(15px);
+}
+
+.navbar-brand {
+    color: var(--white);
+    font-family: 'Manrope',sans-serif;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.navbar-brand span { color: var(--gold); }
+
+.nav-link {
+    color: #ddd !important;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav-link:hover { color: var(--gold) !important; }
+
+.btn-gold {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    padding: 15px 25px;
+    border: 0;
+    border-radius: 7px;
+    background: linear-gradient(120deg,#f2d18a,#c89536);
+    color: #111;
+    font-weight: 800;
+    transition: .25s;
+    box-shadow: 0 8px 30px rgba(217,173,85,.13);
+}
+
+.btn-gold:hover {
+    color: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(217,173,85,.28);
+}
+
+.btn-outline-gold {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    padding: 14px 23px;
+    border-radius: 7px;
+    font-weight: 700;
+    transition: .25s;
+}
+
+.btn-outline-gold:hover {
+    background: var(--gold);
+    color: #111;
+}
+
+.hero {
+    min-height: 760px;
+    padding: 150px 0 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background:
+      radial-gradient(ellipse at 80% 45%,rgba(180,130,43,.14),transparent 38%),
+      linear-gradient(115deg,#090909 0%,#101010 60%,#18140d 100%);
+}
+
+.hero:before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border: 1px solid rgba(217,173,85,.1);
+    border-radius: 50%;
+    right: -150px;
+    top: 100px;
+    box-shadow: 0 0 0 60px rgba(217,173,85,.018),
+                0 0 0 120px rgba(217,173,85,.015);
+}
+
+.hero-content { position: relative; z-index: 2; }
+
+.eyebrow {
+    display: inline-block;
+    color: var(--gold);
+    border: 1px solid rgba(217,173,85,.35);
+    background: rgba(217,173,85,.07);
+    border-radius: 50px;
+    padding: 8px 15px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.hero h1 {
+    font-size: clamp(42px,6vw,73px);
+    line-height: 1.08;
+    margin-bottom: 25px;
+}
+
+.hero-description {
+    font-size: 18px;
+    max-width: 600px;
+}
+
+.hero-points {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin: 28px 0 34px;
+}
+
+.hero-points span {
+    color: #eee;
+    font-size: 14px;
+}
+
+.hero-points i { color: var(--gold); margin-right: 5px; }
+
+.hero-visual {
+    position: relative;
+    z-index: 1;
+    min-height: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.visual-card {
+    width: 100%;
+    max-width: 430px;
+    padding: 30px;
+    border: 1px solid rgba(217,173,85,.25);
+    border-radius: 18px;
+    background: linear-gradient(145deg,#202020,#101010);
+    box-shadow: 0 25px 80px rgba(0,0,0,.5);
+    transform: rotate(2deg);
+}
+
+.visual-card .screen {
+    background: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    color: #151515;
+}
+
+.screen-top {
+    font-size: 12px;
+    color: #555;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.screen-line {
+    height: 9px;
+    background: #ddd;
+    border-radius: 20px;
+    margin: 12px 0;
+}
+
+.screen-line.gold-line { background: #d9ad55; width: 70%; }
+.screen-line.short { width: 45%; }
+
+.screen-boxes {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.screen-box {
+    padding: 12px 5px;
+    text-align: center;
+    background: #eee;
+    border-radius: 6px;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.screen-box i {
+    display: block;
+    font-size: 18px;
+    color: #b48630;
+    margin-bottom: 5px;
+}
+
+.visual-caption {
+    color: var(--gold2);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+
+.trust-strip {
+    padding: 25px 0;
+    background: #141414;
+    border-top: 1px solid rgba(217,173,85,.15);
+    border-bottom: 1px solid rgba(217,173,85,.15);
+}
+
+.trust-item {
+    text-align: center;
+    color: #ddd;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.trust-item i {
+    color: var(--gold);
+    font-size: 19px;
+    margin-right: 7px;
+}
+
+.section-label {
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 800;
+    margin-bottom: 17px;
+}
+
+.section-heading {
+    font-size: clamp(32px,4vw,48px);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.problem-section { background: #0d0d0d; }
+
+.problem-card {
+    height: 100%;
+    padding: 27px;
+    border-radius: 12px;
+    background: #171717;
+    border: 1px solid #292929;
+    transition: .25s;
+}
+
+.problem-card:hover {
+    border-color: rgba(217,173,85,.5);
+    transform: translateY(-5px);
+}
+
+.problem-card i {
+    font-size: 27px;
+    color: var(--gold);
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.problem-card h4 { font-size: 19px; }
+
+.statement {
+    border-left: 3px solid var(--gold);
+    padding: 20px 25px;
+    background: rgba(217,173,85,.06);
+    margin-top: 35px;
+    color: #eee;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.gold-section {
+    background: linear-gradient(120deg,#c08b32,#edce83);
+    color: #101010;
+}
+
+.gold-section p { color: #292015; }
+
+.gold-section .section-label { color: #33240e; }
+
+.gold-section .section-heading { color: #111; }
+
+.strategy-step {
+    display: flex;
+    gap: 18px;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(0,0,0,.15);
+}
+
+.step-number {
+    flex: 0 0 43px;
+    height: 43px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: #111;
+    color: var(--gold2);
+    font-weight: 800;
+}
+
+.strategy-step h4 { font-size: 18px; margin-bottom: 5px; }
+
+.strategy-step p { margin: 0; }
+
+.feature-card {
+    height: 100%;
+    padding: 28px;
+    border: 1px solid #292929;
+    border-radius: 12px;
+    background: linear-gradient(145deg,#181818,#101010);
+}
+
+.feature-icon {
+    width: 52px;
+    height: 52px;
+    display: grid;
+    place-items: center;
+    background: rgba(217,173,85,.1);
+    border-radius: 10px;
+    color: var(--gold);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.feature-card h4 { font-size: 19px; }
+
+.course-section { background: #0e0e0e; }
+
+.course-module {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 23px;
+    border: 1px solid #292929;
+    border-radius: 10px;
+    background: #151515;
+    height: 100%;
+}
+
+.module-number {
+    color: var(--gold);
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.course-module h4 { font-size: 17px; }
+
+.course-module p { font-size: 14px; margin: 0; }
+
+.audience-card {
+    padding: 28px;
+    height: 100%;
+    background: #171717;
+    border: 1px solid #2b2b2b;
+    border-radius: 12px;
+}
+
+.audience-card i {
+    color: var(--gold);
+    font-size: 23px;
+    margin-right: 8px;
+}
+
+.audience-card h4 { font-size: 18px; }
+
+.highlight-box {
+    padding: 35px;
+    background: linear-gradient(145deg,#211b10,#141414);
+    border: 1px solid rgba(217,173,85,.3);
+    border-radius: 15px;
+}
+
+.highlight-box h3 { color: var(--gold2); }
+
+.disclaimer {
+    font-size: 12px;
+    color: #999;
+}
+
+.enrol-section {
+    background:
+      radial-gradient(ellipse at 50% 0%,rgba(217,173,85,.13),transparent 55%),
+      #0b0b0b;
+}
+
+.enrol-card {
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+    padding: 55px 35px;
+    background: linear-gradient(145deg,#1d1b17,#111);
+    border: 1px solid rgba(217,173,85,.4);
+    border-radius: 18px;
+    box-shadow: 0 20px 70px rgba(0,0,0,.4);
+}
+
+.price-note {
+    color: var(--gold2);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.price {
+    font-size: clamp(42px,7vw,65px);
+    font-weight: 800;
+    color: var(--gold2);
+    font-family: 'Manrope',sans-serif;
+}
+
+.faq-section { background: #101010; }
+
+.accordion-item {
+    background: #181818;
+    border: 1px solid #303030;
+    margin-bottom: 12px;
+    border-radius: 8px !important;
+    overflow: hidden;
+}
+
+.accordion-button {
+    background: #181818;
+    color: white;
+    font-weight: 700;
+    padding: 20px;
+    box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background: #211c13;
+    color: var(--gold2);
+}
+
+.accordion-button::after {
+    filter: invert(1);
+}
+
+.accordion-body {
+    color: var(--muted);
+    line-height: 1.8;
+    background: #141414;
+}
+
+.footer {
+    background: #080808;
+    padding: 55px 0 30px;
+    border-top: 1px solid #262626;
+}
+
+.footer-brand {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.footer-brand span { color: var(--gold); }
+
+.whatsapp-float {
+    position: fixed;
+    right: 20px;
+    bottom: 22px;
+    z-index: 999;
+    background: var(--green);
+    color: #fff;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 29px;
+    box-shadow: 0 5px 25px rgba(0,0,0,.4);
+    transition: .2s;
+}
+
+.whatsapp-float:hover {
+    color: white;
+    transform: scale(1.08);
+}
+
+.mobile-cta {
+    display: none;
+}
+
+@media(max-width:991px) {
+    .hero { padding-top: 125px; }
+    .hero-visual { margin-top: 45px; min-height: auto; }
+}
+
+@media(max-width:767px) {
+    .section-padding { padding: 70px 0; }
+    .hero { padding: 125px 0 75px; min-height: auto; }
+    .hero h1 { font-size: 43px; }
+    .hero-description { font-size: 16px; }
+    .hero-visual { min-height: 300px; }
+    .visual-card { padding: 18px; }
+    .trust-item { margin: 9px 0; }
+    .enrol-card { padding: 40px 20px; }
+    .mobile-cta {
+        display: block;
+        position: fixed;
+        z-index: 998;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 12px 15px;
+        background: rgba(9,9,9,.97);
+        border-top: 1px solid rgba(217,173,85,.25);
+    }
+    .mobile-cta .btn-gold { width: 100%; }
+    .footer { padding-bottom: 100px; }
+    .whatsapp-float { bottom: 85px; }
+}
+
+@media(prefers-reduced-motion:reduce) {
+    html { scroll-behavior: auto; }
+    *,*::before,*::after { transition: none !important; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav class="navbar navbar-expand-lg fixed-top">
+<div class="container">
+    <a class="navbar-brand" href="#home">CLIENT <span>MAGNETS</span></a>
+
+    <button class="navbar-toggler bg-light" type="button"
+        data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+            <li class="nav-item"><a class="nav-link" href="#opportunity">The Opportunity</a></li>
+            <li class="nav-item"><a class="nav-link" href="#strategy">Our Strategy</a></li>
+            <li class="nav-item"><a class="nav-link" href="#training">What You Learn</a></li>
+            <li class="nav-item"><a class="nav-link" href="#faq">FAQs</a></li>
+            <li class="nav-item mt-3 mt-lg-0">
+                <a class="btn-gold py-2 px-3" href="#enrol">Get Started <i class="bi bi-arrow-right"></i></a>
+            </li>
+        </ul>
+    </div>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+<div class="container">
+<div class="row align-items-center">
+
+<div class="col-lg-7 hero-content">
+    <div class="eyebrow">
+        <i class="bi bi-stars"></i> A NEW WAY TO APPROACH DIGITAL OPPORTUNITIES
+    </div>
+
+    <h1>
+        STOP WAITING FOR JOBS.<br>
+        <span class="gold-text">LEARN TO FIND YOUR OWN CLIENTS.</span>
+    </h1>
+
+    <p class="hero-description">
+        What if your phone or computer could become more than a device
+        for chatting, browsing and entertainment?
+
+        Learn how to identify people and businesses that need digital
+        services, approach them directly, secure projects and deliver
+        valuable work.
+    </p>
+
+    <div class="hero-points">
+        <span><i class="bi bi-check-circle-fill"></i> Find potential clients</span>
+        <span><i class="bi bi-check-circle-fill"></i> Approach businesses</span>
+        <span><i class="bi bi-check-circle-fill"></i> Work independently</span>
+    </div>
+
+    <div class="d-flex flex-wrap gap-3">
+        <a href="#enrol" class="btn-gold">
+            I WANT TO LEARN THIS <i class="bi bi-arrow-right"></i>
+        </a>
+        <a href="#strategy" class="btn-outline-gold">
+            Discover the strategy
+        </a>
+    </div>
+
+    <p class="mt-4 mb-0 disclaimer">
+        Practical training for people ready to learn, practise and take action.
+    </p>
+</div>
+
+<div class="col-lg-5">
+    <div class="hero-visual">
+        <div class="visual-card">
+            <div class="screen">
+                <div class="screen-top">
+                    <i class="bi bi-grid-fill"></i> BUSINESS OPPORTUNITY WORKSPACE
+                </div>
+                <h5 style="font-size:17px;">Client Discovery</h5>
+                <p style="font-size:11px;color:#666;margin-bottom:15px;">
+                    A practical approach to identifying potential clients.
+                </p>
+                <div class="screen-line gold-line"></div>
+                <div class="screen-line"></div>
+                <div class="screen-line short"></div>
+                <div class="screen-boxes">
+                    <div class="screen-box"><i class="bi bi-search"></i>Research</div>
+                    <div class="screen-box"><i class="bi bi-send"></i>Approach</div>
+                    <div class="screen-box"><i class="bi bi-briefcase"></i>Projects</div>
+                </div>
+            </div>
+            <div class="visual-caption">FIND CLIENTS. SECURE PROJECTS.</div>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- TRUST STRIP -->
+<section class="trust-strip">
+<div class="container">
+<div class="row">
+    <div class="col-md-3 trust-item"><i class="bi bi-phone"></i> Phone or Computer</div>
+    <div class="col-md-3 trust-item"><i class="bi bi-person-check"></i> Direct Client Approach</div>
+    <div class="col-md-3 trust-item"><i class="bi bi-cpu"></i> AI or Manual Delivery</div>
+    <div class="col-md-3 trust-item"><i class="bi bi-graph-up-arrow"></i> Independent Work</div>
+</div>
+</div>
+</section>
+
+<!-- PROBLEM -->
+<section class="section-padding problem-section" id="opportunity">
+<div class="container">
+
+<div class="row justify-content-center text-center mb-5">
+<div class="col-lg-9">
+    <div class="section-label">THE REAL PROBLEM</div>
+    <h2 class="section-heading">
+        It Is Not Always That Opportunities Are Missing.
+        <span class="gold">Sometimes, You Simply Don't Know Where to Look.</span>
+    </h2>
+    <p>
+        Many people spend months searching for employment, scrolling through
+        social media, applying for opportunities and waiting for somebody
+        to notice them.
+
+        Yet businesses, professionals and organisations constantly need
+        help with everyday digital tasks.
+    </p>
+</div>
+</div>
+
+<div class="row g-4">
+<div class="col-md-4">
+    <div class="problem-card">
+        <i class="bi bi-hourglass-split"></i>
+        <h4>Waiting for Opportunities</h4>
+        <p>
+            You keep waiting for a vacancy, an employer or somebody to
+            offer you work. But have you learned how to identify people
+            who already need a service?
+        </p>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="problem-card">
+        <i class="bi bi-phone"></i>
+        <h4>Using Your Device Without a Plan</h4>
+        <p>
+            Your phone can connect you to businesses, information,
+            potential customers and useful tools. The important question
+            is whether you know how to turn those resources into action.
+        </p>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="problem-card">
+        <i class="bi bi-question-circle"></i>
+        <h4>Not Knowing Where Clients Are</h4>
+        <p>
+            Having a useful skill is one thing. Knowing who needs it,
+            where to find them, how to approach them and how to secure
+            a project is another.
+        </p>
+    </div>
+</div>
+</div>
+
+<div class="statement">
+    <strong class="gold">Here is the shift:</strong>
+    Instead of only asking, "Where can I find a job?",
+    learn to ask, "Who needs a service I can provide, and how can I reach them?"
+</div>
+
+</div>
+</section>
+
+<!-- CORE STRATEGY -->
+<section class="section-padding gold-section" id="strategy">
+<div class="container">
+<div class="row align-items-center">
+
+<div class="col-lg-5 mb-4 mb-lg-0">
+    <div class="section-label">THE CLIENT MAGNETS APPROACH</div>
+    <h2 class="section-heading">
+        Don't Just Learn a Skill. Learn How to Find the People Who Need It.
+    </h2>
+    <p>
+        CLIENT MAGNETS combines practical digital service training
+        with a structured client-discovery approach.
+
+        You will learn to look beyond job advertisements and explore
+        direct opportunities in the business world.
+    </p>
+    <a href="#training" class="btn btn-dark px-4 py-3 fw-bold">
+        SEE WHAT YOU WILL LEARN <i class="bi bi-arrow-down"></i>
+    </a>
+</div>
+
+<div class="col-lg-7">
+    <div class="strategy-step">
+        <div class="step-number">01</div>
+        <div>
+            <h4>DISCOVER POTENTIAL CLIENTS</h4>
+            <p>
+                Learn how to research businesses, professionals and
+                organisations that may need the services you can offer.
+            </p>
+        </div>
+    </div>
+
+    <div class="strategy-step">
+        <div class="step-number">02</div>
+        <div>
+            <h4>IDENTIFY THEIR NEEDS</h4>
+            <p>
+                Understand how to recognise potential service needs and
+                identify where your skills could provide practical value.
+            </p>
+        </div>
+    </div>
+
+    <div class="strategy-step">
+        <div class="step-number">03</div>
+        <div>
+            <h4>APPROACH THEM PROFESSIONALLY</h4>
+            <p>
+                Learn how to introduce your services, communicate clearly
+                and present a relevant offer instead of sending random messages.
+            </p>
+        </div>
+    </div>
+
+    <div class="strategy-step">
+        <div class="step-number">04</div>
+        <div>
+            <h4>SECURE AND AGREE ON PROJECTS</h4>
+            <p>
+                Learn how to discuss project requirements, negotiate
+                reasonable fees, agree on deliverables and establish
+                payment terms.
+            </p>
+        </div>
+    </div>
+
+    <div class="strategy-step">
+        <div class="step-number">05</div>
+        <div>
+            <h4>DELIVER VALUABLE WORK</h4>
+            <p>
+                Apply the practical digital skills taught in the training,
+                using suitable tools and AI assistance where appropriate.
+            </p>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- WHY DIFFERENT -->
+<section class="section-padding">
+<div class="container">
+<div class="text-center mb-5">
+    <div class="section-label">A DIFFERENT APPROACH</div>
+    <h2 class="section-heading">
+        You Don't Have to Build Your Entire Future Around Freelancing Platforms.
+    </h2>
+    <p class="mx-auto" style="max-width:750px;">
+        Platforms can be useful, but they are not the only way to find
+        people who need digital services. CLIENT MAGNETS teaches you
+        how to explore direct client opportunities too.
+    </p>
+</div>
+
+<div class="row g-4">
+<div class="col-md-6 col-lg-4">
+    <div class="feature-card">
+        <div class="feature-icon"><i class="bi bi-geo-alt"></i></div>
+        <h4>Find Opportunities Yourself</h4>
+        <p>
+            Explore Google Maps, business directories, social media,
+            websites and other public sources to research potential clients.
+        </p>
+    </div>
+</div>
+
+<div class="col-md-6 col-lg-4">
+    <div class="feature-card">
+        <div class="feature-icon"><i class="bi bi-chat-square-text"></i></div>
+        <h4>Approach Clients Directly</h4>
+        <p>
+            Learn to communicate with potential customers, introduce
+            relevant services and start professional conversations.
+        </p>
+    </div>
+</div>
+
+<div class="col-md-6 col-lg-4">
+    <div class="feature-card">
+        <div class="feature-icon"><i class="bi bi-currency-exchange"></i></div>
+        <h4>Agree on Your Project Fee</h4>
+        <p>
+            Learn how to discuss the scope of work, pricing and payment
+            directly with the person or business commissioning the project.
+        </p>
+    </div>
+</div>
+
+<div class="col-md-6 col-lg-4">
+    <div class="feature-card">
+        <div class="feature-icon"><i class="bi bi-robot"></i></div>
+        <h4>Use AI as an Assistant</h4>
+        <p>
+            Discover how AI tools can help with suitable tasks, improve
+            productivity and support your project delivery.
+        </p>
+    </div>
+</div>
+
+<div class="col-md-6 col-lg-4">
+    <div class="feature-card">
+        <div class="feature-icon"><i class="bi bi-laptop"></i></div>
+        <h4>Work with Your Available Device</h4>
+        <p>
+            Learn how to use a computer or smartphone for the parts of
+            the workflow that your device and the task can support.
+        </p>
+    </div>
+</div>
+
+<div class="col-md-6 col-lg-4">
+    <div class="feature-card">
+        <div class="feature-icon"><i class="bi bi-person-workspace"></i></div>
+        <h4>Work Independently</h4>
+        <p>
+            Develop a practical approach to finding opportunities,
+            communicating with clients and managing agreed projects.
+        </p>
+    </div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- WHAT YOU WILL LEARN -->
+<section class="section-padding course-section" id="training">
+<div class="container">
+
+<div class="text-center mb-5">
+    <div class="section-label">INSIDE THE TRAINING</div>
+    <h2 class="section-heading">
+        What Exactly Will You Learn?
+    </h2>
+    <p class="mx-auto" style="max-width:750px;">
+        This is not simply motivational content about making money online.
+        The training is built around practical steps: finding opportunities,
+        communicating with prospects and learning a service you can offer.
+    </p>
+</div>
+
+<div class="row g-3">
+
+<div class="col-md-6">
+    <div class="course-module">
+        <div class="module-number">01</div>
+        <div>
+            <h4>Understanding the Digital Service Market</h4>
+            <p>
+                Understand the relationship between businesses, service
+                providers, customer needs and paid projects.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-6">
+    <div class="course-module">
+        <div class="module-number">02</div>
+        <div>
+            <h4>The Client Magnets Strategy</h4>
+            <p>
+                Learn the thinking and frameworks behind finding potential
+                clients without depending exclusively on job boards.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-6">
+    <div class="course-module">
+        <div class="module-number">03</div>
+        <div>
+            <h4>Prospect Research and Discovery</h4>
+            <p>
+                Explore practical research methods using Google Maps,
+                directories, social media and business websites.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-6">
+    <div class="course-module">
+        <div class="module-number">04</div>
+        <div>
+            <h4>Finding and Approaching Potential Clients</h4>
+            <p>
+                Learn how to identify suitable prospects and communicate
+                with them professionally about relevant services.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-6">
+    <div class="course-module">
+        <div class="module-number">05</div>
+        <div>
+            <h4>Presenting Your Offer and Securing Projects</h4>
+            <p>
+                Understand how to explain your service, discuss requirements
+                and move a conversation towards a clear project agreement.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-6">
+    <div class="course-module">
+        <div class="module-number">06</div>
+        <div>
+            <h4>Pricing, Negotiation and Payment</h4>
+            <p>
+                Learn how to discuss your fee, define deliverables,
+                agree on payment terms and manage client expectations.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-6">
+    <div class="course-module">
+        <div class="module-number">07</div>
+        <div>
+            <h4>Practical Excel-Related Digital Work</h4>
+            <p>
+                Learn the actual service skill behind the training,
+                including relevant spreadsheet and Excel-related tasks
+                that can be offered to suitable clients.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-6">
+    <div class="course-module">
+        <div class="module-number">08</div>
+        <div>
+            <h4>AI-Assisted Project Delivery</h4>
+            <p>
+                Explore how to use AI and other digital tools to assist
+                with appropriate tasks, while checking the accuracy
+                and quality of your work.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-6">
+    <div class="course-module">
+        <div class="module-number">09</div>
+        <div>
+            <h4>Client Relationships and Repeat Opportunities</h4>
+            <p>
+                Learn professional follow-up, communication and
+                service practices that can help build lasting relationships.
+            </p>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<div class="highlight-box mt-5">
+    <h3>Let's Be Clear About What You're Learning.</h3>
+    <p class="mb-0">
+        CLIENT MAGNETS is both a client-acquisition and practical digital
+        service training. You will learn how to find potential clients
+        and approach them, as well as practical Excel-related work and
+        how AI can assist with suitable project tasks.
+
+        You are not simply paying to hear that money can be made online.
+        You are learning a process and a practical service skill that
+        you can develop and apply.
+    </p>
+</div>
+
+</div>
+</section>
+
+<!-- WHO SHOULD JOIN -->
+<section class="section-padding">
+<div class="container">
+
+<div class="text-center mb-5">
+    <div class="section-label">WHO IS THIS FOR?</div>
+    <h2 class="section-heading">
+        You Don't Need to Be an Established Freelancer to Start Learning.
+    </h2>
+    <p>
+        If you are willing to learn a practical skill, research opportunities
+        and communicate professionally, this training may be a useful starting point.
+    </p>
+</div>
+
+<div class="row g-4">
+<div class="col-md-6 col-lg-4">
+    <div class="audience-card">
+        <h4><i class="bi bi-mortarboard"></i> Students</h4>
+        <p>
+            Develop practical digital skills and learn how to explore
+            project opportunities while pursuing your education.
+        </p>
+    </div>
+</div>
+
+<div class="col-md-6 col-lg-4">
+    <div class="audience-card">
+        <h4><i class="bi bi-search"></i> Job Seekers</h4>
+        <p>
+            Explore an additional route to digital work instead of
+            relying only on traditional employment applications.
+        </p>
+    </div>
+</div>
+
+<div class="col-md-6 col-lg-4">
+    <div class="audience-card">
+        <h4><i class="bi bi-laptop"></i> Computer Users</h4>
+        <p>
+            Put your computer to more productive use by developing
+            skills and learning a practical client-discovery process.
+        </p>
+    </div>
+</div>
+
+<div class="col-md-6 col-lg-4">
+    <div class="audience-card">
+        <h4><i class="bi bi-phone"></i> Smartphone Users</h4>
+        <p>
+            Learn how to use your smartphone for research, communication
+            and other suitable parts of the workflow.
+        </p>
+    </div>
+</div>
+
+<div class="col-md-6 col-lg-4">
+    <div class="audience-card">
+        <h4><i class="bi bi-person-plus"></i> Beginners</h4>
+        <p>
+            Start learning how digital services work, how clients are
+            identified and what it takes to deliver a project.
+        </p>
+    </div>
+</div>
+
+<div class="col-md-6 col-lg-4">
+    <div class="audience-card">
+        <h4><i class="bi bi-briefcase"></i> Aspiring Independent Workers</h4>
+        <p>
+            Learn how to seek direct projects, build client relationships
+            and manage work independently.
+        </p>
+    </div>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section-padding problem-section">
+<div class="container">
+<div class="row align-items-center">
+
+<div class="col-lg-6 mb-4">
+    <div class="section-label">THE BIG PICTURE</div>
+    <h2 class="section-heading">
+        The Process Is Simpler to Understand Than You Might Think.
+    </h2>
+    <p>
+        Imagine discovering a business that needs help with a digital task.
+        You understand the task, know how to offer the service, and contact
+        the business with a relevant proposal.
+    </p>
+    <p>
+        If the business is interested, you discuss the work, agree on
+        the fee and terms, complete the project and deliver the agreed result.
+    </p>
+    <p>
+        That is the basic idea behind independent service work.
+        CLIENT MAGNETS helps you understand and practise the steps involved.
+    </p>
+</div>
+
+<div class="col-lg-6">
+    <div class="highlight-box">
+        <div class="strategy-step">
+            <div class="step-number">1</div>
+            <div><h4>YOU FIND A POTENTIAL CLIENT</h4><p>Research a business or person who may need your service.</p></div>
+        </div>
+        <div class="strategy-step">
+            <div class="step-number">2</div>
+            <div><h4>YOU PRESENT YOUR SERVICE</h4><p>Explain how you may be able to help with a relevant task.</p></div>
+        </div>
+        <div class="strategy-step">
+            <div class="step-number">3</div>
+            <div><h4>YOU AGREE ON THE PROJECT</h4><p>Discuss the scope, price, deadline and payment terms.</p></div>
+        </div>
+        <div class="strategy-step">
+            <div class="step-number">4</div>
+            <div><h4>YOU COMPLETE THE WORK</h4><p>Deliver the agreed service professionally.</p></div>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- OBJECTIONS -->
+<section class="section-padding">
+<div class="container">
+<div class="text-center mb-5">
+    <div class="section-label">COMMON CONCERNS</div>
+    <h2 class="section-heading">You May Be Asking Yourself...</h2>
+</div>
+
+<div class="row g-4">
+<div class="col-md-6">
+    <div class="feature-card">
+        <h4><span class="gold">"I don't have a laptop."</span></h4>
+        <p>
+            Some research and communication activities can be done with
+            a smartphone. However, some spreadsheet and project tasks
+            are more suitable for a computer. We explain the practical
+            requirements so you can plan accordingly.
+        </p>
+    </div>
+</div>
+
+<div class="col-md-6">
+    <div class="feature-card">
+        <h4><span class="gold">"I don't know how to find clients."</span></h4>
+        <p>
+            That is one of the central things this training is designed
+            to teach: where to research, how to identify prospects and
+            how to approach them.
+        </p>
+    </div>
+</div>
+
+<div class="col-md-6">
+    <div class="feature-card">
+        <h4><span class="gold">"I am not an expert."</span></h4>
+        <p>
+            You do not need to pretend to be an expert. You need to learn
+            the service, practise, understand your limits and only accept
+            work you can competently deliver.
+        </p>
+    </div>
+</div>
+
+<div class="col-md-6">
+    <div class="feature-card">
+        <h4><span class="gold">"Do I need Fiverr or Upwork?"</span></h4>
+        <p>
+            No. The client-discovery strategy focuses on finding and
+            approaching potential clients directly. You can explore
+            platforms separately if you choose.
+        </p>
+    </div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ENROLMENT -->
+<section class="section-padding enrol-section" id="enrol">
+<div class="container">
+
+<div class="enrol-card">
+    <div class="eyebrow">YOUR NEXT STEP STARTS HERE</div>
+
+    <h2 class="section-heading">
+        Stop Looking at Your Phone as Just a Phone.
+        <span class="gold-text">Start Learning What You Can Do With It.</span>
+    </h2>
+
+    <p>
+        Learn the Client Magnets strategy, develop a practical digital
+        service skill and understand how to pursue project opportunities
+        independently.
+    </p>
+
+    <div class="my-4">
+        <div class="price-note">TRAINING INVESTMENT</div>
+        <div class="price">From ₦10,000</div>
+        <p class="disclaimer">
+            Contact us to confirm the current enrolment package and payment details.
+        </p>
+    </div>
+
+    <div class="d-flex flex-wrap justify-content-center gap-3">
+        <a class="btn-gold" id="enrolButton" href="#">
+            <i class="bi bi-whatsapp"></i> ENROL VIA WHATSAPP
+        </a>
+        <a class="btn-outline-gold" href="#faq">
+            I HAVE QUESTIONS
+        </a>
+    </div>
+
+    <div class="mt-4">
+        <p class="mb-1" style="font-size:14px;">
+            <i class="bi bi-whatsapp gold"></i>
+            WhatsApp: <strong class="text-white">09114612435</strong>
+        </p>
+        <p class="disclaimer mb-0">
+            Ask about the training, course contents, requirements and enrolment.
+        </p>
+    </div>
+</div>
+
+<div class="text-center mt-4">
+    <p class="disclaimer">
+        Training is educational. Finding clients, securing projects and
+        earning income require effort, practice, communication and market
+        demand. Results are not guaranteed.
+    </p>
+</div>
+
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="section-padding faq-section" id="faq">
+<div class="container">
+<div class="text-center mb-5">
+    <div class="section-label">FREQUENTLY ASKED QUESTIONS</div>
+    <h2 class="section-heading">Questions You May Want Answered</h2>
+</div>
+
+<div class="row justify-content-center">
+<div class="col-lg-9">
+
+<div class="accordion" id="faqAccordion">
+
+<div class="accordion-item">
+    <h3 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#faq1" aria-expanded="true">
+            What exactly is CLIENT MAGNETS?
+        </button>
+    </h3>
+    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+            CLIENT MAGNETS is a practical training programme that teaches
+            you how to discover potential clients, approach businesses,
+            present digital services, negotiate project terms and deliver
+            Excel-related digital work with the support of suitable tools
+            and AI where appropriate.
+        </div>
+    </div>
+</div>
+
+<div class="accordion-item">
+    <h3 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#faq2">
+            Is this an Excel training programme?
+        </button>
+    </h3>
+    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+            The programme includes practical Excel-related digital service
+            training. However, its broader focus is teaching you how to
+            identify potential clients and find opportunities to offer
+            the services you learn. It combines a practical skill with
+            a client-acquisition strategy.
+        </div>
+    </div>
+</div>
+
+<div class="accordion-item">
+    <h3 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#faq3">
+            Do I need a laptop?
+        </button>
+    </h3>
+    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+            You can use a smartphone for some research and communication
+            activities. However, a laptop or desktop is recommended for
+            many spreadsheet-related tasks and more advanced project work.
+            Your exact device requirements depend on the task.
+        </div>
+    </div>
+</div>
+
+<div class="accordion-item">
+    <h3 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#faq4">
+            Do I need to be good at Excel before joining?
+        </button>
+    </h3>
+    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+            You are joining to learn. You should be prepared to practise
+            and follow the training. Do not assume that AI will replace
+            the need to understand the work or check your results.
+        </div>
+    </div>
+</div>
+
+<div class="accordion-item">
+    <h3 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#faq5">
+            Where will I find clients?
+        </button>
+    </h3>
+    <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+            The training covers research approaches involving sources
+            such as Google Maps, business directories, social media
+            platforms and websites. You will learn how to identify
+            potential prospects and assess whether your service may
+            be relevant to them.
+        </div>
+    </div>
+</div>
+
+<div class="accordion-item">
+    <h3 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#faq6">
+            Do I have to register on Fiverr or Upwork?
+        </button>
+    </h3>
+    <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+            No. The strategy teaches direct client discovery and outreach.
+            You can choose to use freelancing platforms separately, but
+            they are not a requirement of the direct-client approach.
+        </div>
+    </div>
+</div>
+
+<div class="accordion-item">
+    <h3 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#faq7">
+            How much can I earn?
+        </button>
+    </h3>
+    <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+            Project fees depend on the service, complexity, client,
+            location, experience and agreement. There is no guaranteed
+            income or guaranteed number of clients. The training focuses
+            on helping you develop the skills and process to pursue
+            legitimate paid projects.
+        </div>
+    </div>
+</div>
+
+<div class="accordion-item">
+    <h3 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#faq8">
+            How do I join?
+        </button>
+    </h3>
+    <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+            Click any enrolment button on this page to contact CLIENT
+            MAGNETS on WhatsApp. Ask for the current training package,
+            fee, payment instructions and access details.
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section-padding text-center">
+<div class="container">
+    <div class="section-label">THE OPPORTUNITY IS WORTH EXPLORING</div>
+    <h2 class="section-heading">
+        Learn to Find the Client.<br>
+        <span class="gold-text">Learn to Deliver the Value.</span>
+    </h2>
+    <p class="mx-auto mb-4" style="max-width:700px;">
+        Your device is a tool. Your skill is an asset.
+        Your ability to find and serve people who need that skill
+        is something worth developing.
+    </p>
+    <a href="#" id="finalButton" class="btn-gold">
+        TALK TO CLIENT MAGNETS ON WHATSAPP
+        <i class="bi bi-arrow-right"></i>
+    </a>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-md-6 mb-3">
+    <div class="footer-brand">CLIENT <span>MAGNETS</span></div>
+    <p class="mt-2 mb-0">Find Clients. Secure Projects. Get Paid.</p>
+</div>
+<div class="col-md-6 text-md-end">
+    <p class="mb-2">Questions or enrolment?</p>
+    <a href="#" id="footerWhatsApp" class="gold fw-bold">
+        <i class="bi bi-whatsapp"></i> 09114612435
+    </a>
+</div>
+</div>
+<hr style="border-color:#292929;margin:30px 0 20px;">
+<div class="d-flex flex-wrap justify-content-between gap-2">
+    <small class="text-secondary">
+        &copy; <span id="year"></span> CLIENT MAGNETS. All rights reserved.
+    </small>
+    <small class="text-secondary">Learn. Practise. Discover. Deliver.</small>
+</div>
+</div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a href="#" id="floatingWhatsApp" class="whatsapp-float"
+   aria-label="Contact CLIENT MAGNETS on WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+</a>
+
+<!-- MOBILE STICKY CTA -->
+<div class="mobile-cta">
+    <a href="#" id="mobileWhatsApp" class="btn-gold">
+        <i class="bi bi-whatsapp"></i> ENROL / ASK QUESTIONS
+    </a>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+const whatsappNumber = "2349114612435";
+
+const defaultMessage =
+    "Hello CLIENT MAGNETS. I am interested in your training. " +
+    "Please send me the course details, current enrolment fee, " +
+    "requirements and how to get started.";
+
+const whatsappURL =
+    "https://wa.me/" + whatsappNumber +
+    "?text=" + encodeURIComponent(defaultMessage);
+
+[
+    "enrolButton",
+    "finalButton",
+    "footerWhatsApp",
+    "floatingWhatsApp",
+    "mobileWhatsApp"
+].forEach(function(id) {
+    const element = document.getElementById(id);
+    if (element) {
+        element.href = whatsappURL;
+        element.target = "_blank";
+        element.rel = "noopener noreferrer";
+    }
+});
+
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+</script>
+
+</body>
+</html>
